@@ -25,4 +25,4 @@ Repository/
 └── README.md
 ```
 
-<p align="center">Made with ❤️ by <strong><a href="https://abhinavkumar.dev" target="_blank">Abhinav Kumar</a></strong></p>
+
