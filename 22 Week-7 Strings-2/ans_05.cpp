@@ -1,21 +1,18 @@
-#include<iostream>
-#include<string>
-#include<sstream>
-#include<vector>
-#include<algorithm>
+#include <iostream>
+#include <sstream>
 using namespace std;
 
+int main() {
+    string s, temp, maxWord = "";
+    getline(cin, s);
 
-int main(){
-    string str="proud to be pwians";
-    stringstream ss(str);
-    vector<string>v;
-    string temp;
-    while(ss>>temp){
-        v.push_back(temp);
+    stringstream ss(s);
+
+    while(ss >> temp){
+        if(temp > maxWord){
+            maxWord = temp;
+        }
     }
-    sort(v.begin(),v.end());
-    cout<<v[v.size()-1];
 
-
+    cout << maxWord;
 }
