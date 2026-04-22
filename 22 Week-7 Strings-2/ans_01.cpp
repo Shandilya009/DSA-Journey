@@ -1,16 +1,15 @@
-#include<iostream>
+
+#include <iostream>
+#include<vector>
+#include<algorithm>
 #include<string>
+using namespace std;
+int main() {
+    string str = "PWSkills";
+    string s1=str;
+    reverse(str.begin(),str.end());
+    cout<<s1+str;
 
-int main(){
-    std::string str, temp="";
-    std::cout << "Enter your Strings = ";
-    std::getline(std::cin,str);
 
-    for(int i=0; i<str.size()-1; i++){
-        temp = str[i] + temp;
-    }
-
-    str+=temp;
-    std::cout << str;
     return 0;
 }
