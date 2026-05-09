@@ -1,1 +1,2 @@
 It needs O(1) or O(logn) memory to create auxiliary locations
+inplace means elements arranged in the same aaray without using any extra space
