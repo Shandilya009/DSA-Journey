@@ -17,3 +17,25 @@ int main(){
     print1(a);
     print(a);
 }
+
+
+#include <iostream>
+using namespace std;
+
+void sequence(int n, int current = 1) {
+    if (current > n) return;   // Base case
+
+    cout << current << " ";    // Increasing part
+    sequence(n, current + 1);  // Recursive call
+    if (current != n)
+        cout << current << " "; // Decreasing part
+}
+
+int main() {
+    int n;
+    cin >> n;
+
+    sequence(n);
+
+    return 0;
+}
