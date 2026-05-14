@@ -1,23 +1,19 @@
 #include<iostream>
 using namespace std;
-
-void inc_seq(int n){
-    if (n==0) return ;
-    inc_seq(n-1);
-    cout << n << " ";
+int print1(int a){
+    if(a==0) return 0;
+    print1(a-1);
+    cout<<a;
+    return 0;
 }
-
-void dec_seq(int n){
-    if (n==0) return ;
-    cout << n << " ";
-    dec_seq(n-1);
+int print(int a){
+    if(a==0) return 0;
+    cout<<a;
+    return print(a-1);
 }
-
 int main(){
-    int n;
-    cout << "Enter n = ";
-    cin >> n;
-
-    inc_seq(n);
-    dec_seq(n-1);
+    int a;
+    cin>>a;
+    print1(a);
+    print(a);
 }
