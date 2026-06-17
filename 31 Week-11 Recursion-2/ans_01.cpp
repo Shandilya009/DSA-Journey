@@ -1,5 +1,5 @@
 #include<iostream>
-
+using namespace std;
 int sum(int n){
     if (n==0) return 0;
     return n%10 + sum(n/10);
@@ -7,7 +7,6 @@ int sum(int n){
 
 int main(){
     int n;
-    std::cout << "Enter value of n = ";
-    std::cin >> n;
+    cin >> n;
     std::cout << sum(n);
 }
